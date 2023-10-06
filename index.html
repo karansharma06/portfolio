@@ -4,55 +4,313 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>form - let learn it</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Karan - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(5, 5, 205);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(6, 6, 146);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            color: rgb(102, 102, 247);
+            font-size: 1.04rem;
+        }
+
+        .left {
+            font-size: 1.75rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .firstSection>div {
+            width: 30%;
+
+        }
+
+        .leftSection {
+            font-size: 2rem;
+        }
+        .leftSection .buttons{
+            padding: 43px 0;
+        }
+        .leftSection .btn {
+           padding: 12px ;
+           background-color: rgb(8, 146, 239);
+           color: white;
+           border: 2px solid white;
+           border-radius: 6px;
+           font-size: 20px;
+           cursor: pointer;
+
+        }
+
+        .rightsection img {
+            width: 80%;
+            margin: 50px 0;
+
+        }
+
+        .blue {
+            color: rgb(85, 85, 239);
+
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(85, 85, 239);
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 90vh;
+        }
+
+        main hr {
+            border: 0;
+            background: red;
+            height: 0.1px;
+            margin: 20px 84px;
+        }
+
+        .secondsection h1 {
+            font-size: 1.6rem;
+        }
+
+        .secondsection .box {
+            background: white;
+            width: 78vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondsection .vertical {
+            height: 80px;
+            width: 1px;
+            background-color: white;
+            margin: 0 115px;
+
+        }
+
+        .image-top {
+            width: 21px;
+            position: relative;
+            top: -32px;
+            left: -8px;
+        }
+
+        .vertical-text{
+            position: relative;
+            top: 50px;
+            width: 180px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 60px;
+            color: gray;
+            width: 155px;
+            font-size: 9px;
+        }
+
+        footer {
+            background-color: purple;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+        .footer > div{
+            width: 223px;
+        }
+        .footer-rights{
+            color: grey;
+            text-align: center;
+            padding: 12px 0;
+        }
+
+    </style>
 </head>
+
 <body>
-    hey this is html. Lorem ipsum dolor sitnsectetur adipisicing elit. Sint tempore cupiditate numquam inventore?
-    Voluptates totam aperiam asperiores voluptate expedita suscipit incidunt molestiae reiciendis nemo odit accusamus
-    quasi, at nisi magni! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum laudantium voluptatibus vitae
-    repellat in autem nihil maiores, suscipit nostrum quas nisi! Eos, quos ea nesciunt laboriosam tempore eveniet nemo
-    iure
-    <script src="script.js"></script>
-    <ul type="circle">
-        <li>karan</li>
-        <li>varun</li>
-        <li>sonu</li>
-    </ul>
-    <ol type="A">
-        <li>ksd</li>
-        <li>wvv</li>
-        <li>wvwvwe</li>
-    </ol>
-    <dl>
-        <dt>
-            evj
-        </dt>
-        <dd>
-            html
-        </dd>
-    </dl>
-    <form action="post">
-        <div>
-             
-            <label for="username">enter your name</label>
-            <input type="text" id="username" name="username" placeholder="enter your name" required>
+    <header>
+        <nav>
+            <div class="left">Karan Portfolio</div>
+            <div class="right"></div>
+            <ul>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">Projects</a></li>
+                <li><a href="/">Contact</a></li>
+                <li><a href="/">Services</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hello, My Name is <span class="blue">Karan</span>
+                <div>and I am Web Developer</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Github</button>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="bg.jpg" alt="web developer">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="developer.jpg" alt="">
+                    <div class="vertical-text">
+                        HTML Developer- Microsoft (2010-2012)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam perspiciatis eligendi officiis
+                        cupiditate ex debitis. Natus ex asperiores voluptate impedit consequuntur, deleniti vero.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="developer.jpg" alt="">
+                    <div class="vertical-text">
+                        Node.js Developer- Instagram (2012-2014)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam perspiciatis eligendi officiis
+                        cupiditate ex debitis. Natus ex asperiores voluptate impedit consequuntur, deleniti vero.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="developer.jpg" alt="">
+                    <div class="vertical-text">
+                        Python Developer- Twitter(2014-2016)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam perspiciatis eligendi officiis
+                        cupiditate ex debitis. Natus ex asperiores voluptate impedit consequuntur, deleniti vero.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="developer.jpg" alt="">
+                    <div class="vertical-text">
+                        Java Developer- Facebook (2016-2018)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam perspiciatis eligendi officiis
+                        cupiditate ex debitis. Natus ex asperiores voluptate impedit consequuntur, deleniti vero.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="developer.jpg" alt="">
+                    <div class="vertical-text">
+                        Angular Developer- Yuotube (2018-2020)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam perspiciatis eligendi officiis
+                        cupiditate ex debitis. Natus ex asperiores voluptate impedit consequuntur, deleniti vero.
+                    </div>
+                </div>
+
+
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="first">
+                <h2>Karan's Portfolio</h2>
+            </div>
+            <div class="second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+            <div class="third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+            <div class="fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Services</li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <input type="radio" name="gender" id="male" value="male">
-            <label for="male">male</label>
-            <input type="radio" name="gender" id="female" value="female">
-            <label for="female">female</label>
+        <div class="footer-rights">
+            Copyright &#169; karanportfolio.com / All rights reserved
         </div>
-        <div>
-            <input type="checkbox" name="subcribe" id="subscribe" value="yes">
-            <label for="subcribe">subscribe to letter</label>
-        </div>
-         <select name="cars">
-            <option value="suzuki">suzuki</option>
-            <option value="mercedez">mercedez</option>
-            <option value="honda">honda</option>
-         </select>
-    </form>
+    </footer>
+    <!-- Setup and start animation! -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Graphic Designer.'],
+            typeSpeed: 50,
+        });
+    </script>
+
 </body>
+
 </html>
